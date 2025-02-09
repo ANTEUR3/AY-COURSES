@@ -1,0 +1,75 @@
+{
+    "students":[
+        {
+            "id": 1,
+            "name": "Alice Johnson",
+            "age": 20,
+            "major": "Computer Science",
+            "gpa": 3.8
+        },
+        {
+            "id": 2,
+            "name": "Bob Smith",
+            "age": 22,
+            "major": "Mathematics",
+            "gpa": 3.6
+        },
+        {
+            "id": 3,
+            "name": "Charlie Brown",
+            "age": 21,
+            "major": "Physics",
+            "gpa": 3.7
+        },
+        {
+            "id": 4,
+            "name": "David Wilson",
+            "age": 23,
+            "major": "Chemistry",
+            "gpa": 3.5
+        },
+        {
+            "id": 5,
+            "name": "Eva Green",
+            "age": 20,
+            "major": "Biology",
+            "gpa": 3.9
+        },
+        {
+            "id": 6,
+            "name": "Frank White",
+            "age": 22,
+            "major": "Engineering",
+            "gpa": 3.4
+        },
+        {
+            "id": 7,
+            "name": "Grace Lee",
+            "age": 21,
+            "major": "Economics",
+            "gpa": 3.8
+        },
+        {
+            "id": 8,
+            "name": "Hannah King",
+            "age": 23,
+            "major": "History",
+            "gpa": 3.6
+        },
+        {
+            "id": 9,
+            "name": "Ian Scott",
+            "age": 20,
+            "major": "Philosophy",
+            "gpa": 3.7
+        },
+        {
+            "id": 10,
+            "name": "Jane Adams",
+            "age": 22,
+            "major": "Literature",
+            "gpa": 3.5
+        }
+    ]
+    
+}
