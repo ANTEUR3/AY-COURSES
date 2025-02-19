@@ -19,7 +19,6 @@ type studentAction=
   interface StudentContextType {
     students: student[] | undefined ;
     dispatch: Dispatch<studentAction>;
-   
   }
 
 export const AppContext=createContext<StudentContextType | undefined>(undefined);
@@ -41,20 +40,12 @@ export const studentDispacher=(state:student[] | undefined,action:studentAction)
     default:
       return state;
     }
-
-   
-
- 
-
 }
 
 interface StudentContextProviderProps {
   children: React.ReactNode;
 }
 export const AppContextProvider : React.FC<StudentContextProviderProps>=({children})=>{
-
-  
-      
       const [students,dispatch]=useReducer(studentDispacher,[]);
 
       return(

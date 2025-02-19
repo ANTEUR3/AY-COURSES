@@ -11,11 +11,16 @@ interface Student {
 
 
 
-import {  useState } from "react";
+import {  useMemo, useState } from "react";
 import {  useEffect} from "react";
 import getStudents from "@/dataFunctions";
 import { useContext } from "react";
 import { AppContext } from "@/context/appContext";
+import { studentContext } from "@/context/studentsContext";
+import Students from "./Students";
+import student from "@/types/student";
+import StudentCard from "./studentCard";
+import StudentName from "./StudentName";
 export default function Home() {
 
 
@@ -30,11 +35,22 @@ const {students, dispatch} = context;
     fetchData(); 
   },[])
 
-  useEffect(()=>{console.log(students)},[students])
-  return (
-    <div>
-     <h1>hello</h1>
+  const displayStudents=useMemo(()=>{
+    return students?.map((student,key)=>{
+      return <StudentCard key={key}>
+         <StudentName name={student.name} />
+      </StudentCard>
+ })
+  },[students])
 
-    </div>
+
+  return (
+        <div className="grid grid-cols-2 gap-x-[200px] px-[100px]">
+               
+            {displayStudents}
+          
+        </div>
   );
 }
+
+
